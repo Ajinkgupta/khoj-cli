@@ -1,0 +1,2 @@
+[console_scripts]
+khoj = khoj.khoj:main

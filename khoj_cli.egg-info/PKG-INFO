@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: khoj-cli
+Version: 1.0
+Summary: CLI tool for searching using Khoj
+Home-page: https://github.com/ajinkgupta/khoj-cli
+Author: Ajink Gupta
+Author-email: guptaajink21@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: beautifulsoup4
+
+![image](https://github.com/Ajinkgupta/khoj-cli/assets/76146259/e1da9732-ec00-4e8d-b5b3-af600ccaf386)

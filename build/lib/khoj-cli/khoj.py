@@ -1,4 +1,5 @@
 import argparse
+import sys
 import requests
 import json
 from colorama import init, Fore
@@ -20,11 +21,13 @@ def print_search_result(result):
     print("-" * 50)
 
 def main():
-    parser = argparse.ArgumentParser(description='Search using Khoj CLI')
-    parser.add_argument('query', type=str, help='Search query')
-    args = parser.parse_args()
+    if len(sys.argv) == 1:
+        print("Error: Query required. Usage: khoj <query>")
+        return
+
+    query = ' '.join(sys.argv[1:])
     
-    results = search(args.query)
+    results = search(query)
     if results:
         print("Search Results:")
         for result in results:
